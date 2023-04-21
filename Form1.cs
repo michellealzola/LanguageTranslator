@@ -31,5 +31,10 @@ namespace Language_Translator
         {
             lblsTranslation.Text = "Guten Morgen";
         }
+
+        private void picCherry_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Yuum");
+        }
     }
 }

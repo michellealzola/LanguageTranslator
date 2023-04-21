@@ -33,12 +33,14 @@
             this.btnItalian = new System.Windows.Forms.Button();
             this.btnSpanish = new System.Windows.Forms.Button();
             this.btnGerman = new System.Windows.Forms.Button();
+            this.picCherry = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.picCherry)).BeginInit();
             this.SuspendLayout();
             // 
             // lblInstruction
             // 
             this.lblInstruction.AutoSize = true;
-            this.lblInstruction.Location = new System.Drawing.Point(68, 69);
+            this.lblInstruction.Location = new System.Drawing.Point(68, 89);
             this.lblInstruction.Name = "lblInstruction";
             this.lblInstruction.Size = new System.Drawing.Size(228, 13);
             this.lblInstruction.TabIndex = 0;
@@ -49,7 +51,7 @@
             // 
             this.lblsTranslation.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.lblsTranslation.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblsTranslation.Location = new System.Drawing.Point(47, 100);
+            this.lblsTranslation.Location = new System.Drawing.Point(47, 120);
             this.lblsTranslation.Name = "lblsTranslation";
             this.lblsTranslation.Size = new System.Drawing.Size(268, 23);
             this.lblsTranslation.TabIndex = 1;
@@ -57,7 +59,7 @@
             // 
             // btnItalian
             // 
-            this.btnItalian.Location = new System.Drawing.Point(47, 146);
+            this.btnItalian.Location = new System.Drawing.Point(47, 166);
             this.btnItalian.Name = "btnItalian";
             this.btnItalian.Size = new System.Drawing.Size(75, 23);
             this.btnItalian.TabIndex = 2;
@@ -67,7 +69,7 @@
             // 
             // btnSpanish
             // 
-            this.btnSpanish.Location = new System.Drawing.Point(141, 146);
+            this.btnSpanish.Location = new System.Drawing.Point(141, 166);
             this.btnSpanish.Name = "btnSpanish";
             this.btnSpanish.Size = new System.Drawing.Size(75, 23);
             this.btnSpanish.TabIndex = 2;
@@ -77,7 +79,7 @@
             // 
             // btnGerman
             // 
-            this.btnGerman.Location = new System.Drawing.Point(240, 146);
+            this.btnGerman.Location = new System.Drawing.Point(240, 166);
             this.btnGerman.Name = "btnGerman";
             this.btnGerman.Size = new System.Drawing.Size(75, 23);
             this.btnGerman.TabIndex = 2;
@@ -85,11 +87,23 @@
             this.btnGerman.UseVisualStyleBackColor = true;
             this.btnGerman.Click += new System.EventHandler(this.btnGerman_Click);
             // 
+            // picCherry
+            // 
+            this.picCherry.Image = global::Language_Translator.Properties.Resources.slot1;
+            this.picCherry.Location = new System.Drawing.Point(151, 12);
+            this.picCherry.Name = "picCherry";
+            this.picCherry.Size = new System.Drawing.Size(53, 51);
+            this.picCherry.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picCherry.TabIndex = 3;
+            this.picCherry.TabStop = false;
+            this.picCherry.Click += new System.EventHandler(this.picCherry_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(359, 219);
+            this.Controls.Add(this.picCherry);
             this.Controls.Add(this.btnGerman);
             this.Controls.Add(this.btnSpanish);
             this.Controls.Add(this.btnItalian);
@@ -97,6 +111,7 @@
             this.Controls.Add(this.lblInstruction);
             this.Name = "Form1";
             this.Text = "Language Translator";
+            ((System.ComponentModel.ISupportInitialize)(this.picCherry)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -109,6 +124,7 @@
         private System.Windows.Forms.Button btnItalian;
         private System.Windows.Forms.Button btnSpanish;
         private System.Windows.Forms.Button btnGerman;
+        private System.Windows.Forms.PictureBox picCherry;
     }
 }
 
